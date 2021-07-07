@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Catgories", type: :request do
+RSpec.describe 'Catgories', type: :request do
   let!(:catgories) { create_list(:catgory, 5 )}
   let!(:catgory_id) { catgories.first.id }
 
@@ -37,7 +37,7 @@ RSpec.describe "Catgories", type: :request do
       before { post '/api/v1/catgories', params: {name: ''}}
 
       it 'returns a validation failure messages' do
-        expect(response.body).to include(" is too short (minimum is 3 characters)") 
+        expect(response.body).to include("is too short (minimum is 3 characters)") 
       end
     end
   end

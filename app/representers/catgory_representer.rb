@@ -1,6 +1,6 @@
-class CatgoriesRepresenter
-    def def initialize(catgory)
-      @catgories = catgories
+class CatgoryRepresenter
+    def initialize(catgory)
+      @catgory = catgory
     end
 
     def as_json
@@ -11,5 +11,5 @@ class CatgoriesRepresenter
     end
     
     private
-    attr_reader :catgrories
+    attr_reader :catgory
 end

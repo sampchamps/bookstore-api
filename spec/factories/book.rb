@@ -4,4 +4,4 @@ FactoryBot.define do
      author { Faker::Book.author }
      catgory { create(:catgory)}
     end
- end
+end
